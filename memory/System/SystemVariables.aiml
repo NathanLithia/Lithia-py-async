@@ -5,7 +5,7 @@
 <meta name="language" content="en"/>
 
 <category>
-<pattern>SysVariable.Owner</pattern>
+<pattern>Grab.SystemVariable.Owner</pattern>
 <template>175182469656477696</template>
 </category>
 
