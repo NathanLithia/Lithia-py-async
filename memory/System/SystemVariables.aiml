@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+
+<meta name="author" content="Lithia"/>
+<meta name="language" content="en"/>
+
+<category>
+<pattern>SysVar.Owner</pattern>
+<template>175182469656477696</template>
+</category>
+
+<category>
+<pattern>SysVar.ChatBlacklist</pattern>
+<template>
+>AIML
+SysVar
+</template>
+</category>
+
+</aiml>
