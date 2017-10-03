@@ -9,18 +9,10 @@ import datetime
 import LithiaLibs
 from random import randint
 from google import search
-import random
 from translate import translator
 import aiml
 
-
-
-
-
-
-
-print("Starting Bot.")
-rspw = randint(1000, 9999)
+print("Loading..")
 kernel = aiml.Kernel()
 kernel.learn("std-startup.xml")
 kernel.respond("load aiml basic")
@@ -42,8 +34,6 @@ async def on_message(message):
 
     if message.author.bot == False: #Lets be racist and ignore all users whom are bots
         # do some extra stuff here
-        #if message.author.id == "175032013160579072":
-        #    await my_bot.delete_message(message)
         if message.content == "@everyone": #Because we hate being tagged we reply to @everyones
             print("Someone just pinged everyone ;-;")
             await my_bot.send_message(message.channel, "{0.mention} pls https://puu.sh/x7il5/65935dade1.gif".format(message.author))
@@ -130,20 +120,14 @@ async def say(ctx, *, message: str = None):
 async def invite():
     """Prints my invitation link."""
     return await my_bot.say("https://goo.gl/PsTL5u is my invitation link.")
-    #return await my_bot.say("https://discordapp.com/api/oauth2/authorize?client_id=" + my_bot.user.id + "&scope=bot&permissions=8")
 
 @my_bot.command(pass_context=True)
 async def kill(ctx, message: str = None):
     """Attempt to kill a user."""
     if message is None:
         if ctx.message.author.id == "175182469656477696":
-            #await my_bot.change_presence(game=discord.Game(name='Rebooting..'))
             await my_bot.say("Rebooting, sec!")
             return sys.exit()
-    elif message is str(rspw):
-        await my_bot.say("Rebooting, sec!")
-        sys.exit()
-        return
     else:
         return await my_bot.say("(ಠ╭╮ಠ﻿)/🔪")
 
@@ -161,7 +145,6 @@ async def hg(*userarrayinput):
         contestant2 = random.randint(0,len(userarray) - 1)
         while contestant1 == contestant2:
             contestant2 = random.randint(0,len(userarray) - 1)
-        #await my_bot.say(str(userarray[contestant1]) + " VS " + str(userarray[contestant2]))
         await asyncio.sleep(1)
         winner = random.randint(0,1)
         if winner == 0:
