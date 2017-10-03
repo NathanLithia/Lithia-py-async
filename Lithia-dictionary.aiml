@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+
+<meta name="author" content="Lithia"/>
+<meta name="language" content="en"/>
+
+<category>
+<pattern>DEFINE DISCORD</pattern>
+<template>
+All-in-one voice and text chat for gamers that's free, secure, and works on both your desktop and phone. 
+</template>
+</category>
+
+</aiml>
