@@ -5,15 +5,15 @@
 <meta name="language" content="en"/>
 
 <category>
-<pattern>SystemVariable.Owner</pattern>
+<pattern>SysVar.Owner</pattern>
 <template>175182469656477696</template>
 </category>
 
 <category>
-<pattern>SystemVariable.ChatBlacklist</pattern>
+<pattern>SysVar.ChatBlacklist</pattern>
 <template>
 >AIML
-SystemVariable
+SysVar
 </template>
 </category>
 
