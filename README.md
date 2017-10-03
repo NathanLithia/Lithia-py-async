@@ -1,3 +1,6 @@
 Project name: Lithia AIML Repository.
 
 Description: A repository for modified AIML files for Lithia.
+
+If you are here for source code in order to learn and write you're own bot, you have come to the wrong place.
+There are much better examples out on the web than this.
