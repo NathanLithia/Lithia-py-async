@@ -5,8 +5,16 @@
 <meta name="language" content="en"/>
 
 <category>
-<pattern>Grab.SystemVariable.Owner</pattern>
+<pattern>SystemVariable.Owner</pattern>
 <template>175182469656477696</template>
+</category>
+
+<category>
+<pattern>SystemVariable.ChatBlacklist</pattern>
+<template>
+>AIML
+SystemVariable
+</template>
 </category>
 
 </aiml>
