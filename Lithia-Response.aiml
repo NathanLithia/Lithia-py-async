@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+
+<meta name="author" content="Lithia"/>
+<meta name="language" content="en"/>
+
+<!-- This file contains automated reponses. -->
+
+<category>
+<pattern>Hello</pattern>
+<template>
+<li>Hi</li>
+<li>Hello</li>
+</template>
+</category>
+
+</aiml>
