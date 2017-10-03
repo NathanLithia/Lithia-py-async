@@ -37,10 +37,6 @@ async def on_message(message):
         if message.content == "@everyone": #Because we hate being tagged we reply to @everyones
             print("Someone just pinged everyone ;-;")
             await my_bot.send_message(message.channel, "{0.mention} pls https://puu.sh/x7il5/65935dade1.gif".format(message.author))
-        if message.content == "hi":
-            await my_bot.send_message(message.channel, "Hello")
-        if message.content == "stfu":
-            await my_bot.send_message(message.channel, "gtfo")
         #Lets Answer some questions by picking up keywords!~ 
         keywords = ["what is a", "how do i ", "how would i ", "whats a", "wat is a", "wot is a", "where can i", "where do i find", "where do you find", "what is ", "how would i go about"]
         blacklistwords = [">AIML"]
