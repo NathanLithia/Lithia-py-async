@@ -43,12 +43,12 @@ async def on_message(message):
         if message.author.id == "175182469656477696": #Keeping this function private for now
             if any(keyword in str(message.content) for keyword in keywords):
                 if any(keyword in str(message.content) for keyword in blacklistwords):
-                    return print("prevented a bad search")
+                    return
                 else:
                     searchQuery = []
                     for j in search(str(message.content), tld="com.au", num=1, start=0, stop=1, pause=2):
                         searchQuery.append(j)
-                    await my_bot.send_message(message.channel, "{0.mention}, maybe ".format(message.author) + str(searchQuery[0]))
+                    await my_bot.send_message(message.channel, "{0.mention}, maybe try ".format(message.author) + str(searchQuery[0]))
     return  
 
 @my_bot.event
