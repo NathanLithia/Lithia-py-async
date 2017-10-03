@@ -1,0 +1,7 @@
+@ECHO OFF
+:A
+CLS
+CALL "robots.py"
+ECHO RESTARTING.
+timeout 5
+GOTO A
