@@ -59,7 +59,7 @@ async def on_ready():
     await my_bot.change_presence(game=discord.Game(name=">Command"))
     return 
 
-#@my_bot.event
+#@my_bot.event #DISCORD HAS ITS OWN ANNOUNCEMENT SYSTEM NOW
 #async def on_member_join(member):
 #    server = member.server
 #    fmt = 'Welcome {0.mention}!'
