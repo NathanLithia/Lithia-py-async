@@ -10298,34 +10298,3 @@ teachings and discipline of this kind of Buddhism.
 </template>
 </category>
 
-<category>
-<pattern>DEFINE DARK MATTER</pattern>
-<template>
-Dark matter is a hypothetical type of matter distinct from baryonic matter, neutrinos and dark energy.
-<template>
-</category>
-
-<category>
-<pattern> DEFINE BIG BANG</pattern>
-<template>
-The Big Bang theory is the prevailing cosmological model
- for the universe from the earliest known periods through its subsequent large-scale evolution.
-<template>
-</category>
-
-<category>
-<pattern> DEFINE PROXY </pattern>
-<template>
-In computer networks, a proxy server is a server that acts as an intermediary 
-for requests from clients seeking resources from other servers.
-<template>
-</category>
-
-<cagetory>
-<pattern> DEFINE IP ADRESS </pattern>
-An Internet Protocol address is a numerical label 
-assigned to each device connected to a computer network that uses the Internet Protocol for communication.
-<template>
-</category>
-
-</aiml>
