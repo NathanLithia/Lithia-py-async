@@ -56,7 +56,7 @@ async def on_ready():
     LithiaLibs.clear()
     print("Bot Started.")
     system("Title " + str(my_bot.user.id) + " " + str(my_bot.user.name))
-    await my_bot.change_presence(game=discord.Game(name='>Command'))
+    await my_bot.change_presence(game=discord.Game(name=">Command"))
     return 
 
 @my_bot.event
