@@ -59,11 +59,11 @@ async def on_ready():
     await my_bot.change_presence(game=discord.Game(name=">Command"))
     return 
 
-@my_bot.event
-async def on_member_join(member):
-    server = member.server
-    fmt = 'Welcome {0.mention}!'
-    await my_bot.send_message(server, fmt.format(member, server))
+#@my_bot.event
+#async def on_member_join(member):
+#    server = member.server
+#    fmt = 'Welcome {0.mention}!'
+#    await my_bot.send_message(server, fmt.format(member, server))
 
 @my_bot.command(pass_context=True)
 async def ping(ctx, member: discord.Member = None):
