@@ -2237,7 +2237,7 @@ All around us.
 <category>
 <pattern>WHERE IS MOON</pattern>
 <template>
-<set name="it"><set name="topic"> MOON </set></set> is a satellite of the Earth.
+<set name="it"><set name="topic"> MOON </set></set> Moon is 384 400km away from the earth.
 </template>
 </category>
 
@@ -2359,7 +2359,7 @@ the orbits of Saturn and Neptune.
 <category>
 <pattern>WHERE WERE YOU BEFORE</pattern>
 <template>
-I was constructed at <bot name="birthplace"/>.
+I was constructed at <bot name="birthplace"/> I was everywhere.
 </template>
 </category>
 

@@ -56,14 +56,14 @@ async def on_ready():
     LithiaLibs.clear()
     print("Bot Started.")
     system("Title " + str(my_bot.user.id) + " " + str(my_bot.user.name))
-    await my_bot.change_presence(game=discord.Game(name='>Command'))
+    await my_bot.change_presence(game=discord.Game(name=">Command"))
     return 
 
-@my_bot.event
-async def on_member_join(member):
-    server = member.server
-    fmt = 'Welcome {0.mention}!'
-    await my_bot.send_message(server, fmt.format(member, server))
+#@my_bot.event #DISCORD HAS ITS OWN ANNOUNCEMENT SYSTEM NOW
+#async def on_member_join(member):
+#    server = member.server
+#    fmt = 'Welcome {0.mention}!'
+#    await my_bot.send_message(server, fmt.format(member, server))
 
 @my_bot.command(pass_context=True)
 async def ping(ctx, member: discord.Member = None):
