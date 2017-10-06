@@ -13,3 +13,5 @@ Discord.py: https://github.com/Rapptz/discord.py
 Discord.py Docs: https://discordpy.readthedocs.io/en/latest/api.html
 
 Python.AIML: https://github.com/paulovn/python-aiml
+
+AIML 1.0.1 Docs: http://www.alicebot.org/TR/2011/
