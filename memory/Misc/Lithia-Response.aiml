@@ -9,8 +9,7 @@
 <category>
 <pattern>Hello</pattern>
 <template>
-<li>Hi</li>
-<li>Hello</li>
+Hi
 </template>
 </category>
 
