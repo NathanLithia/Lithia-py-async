@@ -1,7 +1,9 @@
 <aiml version="1.0.1" encoding="UTF-8">
 
     <category>
+
         <pattern>LOAD AIML BASIC</pattern>
+        
         <template>
             <learn>memory/misc/*.aiml</learn>
             <learn>memory/utility/*.aiml</learn>

@@ -1,7 +1,7 @@
 @ECHO OFF
-:A
 CLS
-CALL "robots.py"
-ECHO RESTARTING.
-timeout 5
+:A
+CALL "robot.py"
+ECHO Restarting..
+timeout 3
 GOTO A
