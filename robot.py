@@ -173,3 +173,6 @@ async def donate(message):
 -XMR- Monero
 43qmzGxV2X6S7L3ZodUEMq6XFXj3DcAvYYYsCqiBQqQVMqdBJejAk2WjXqrT3anyZ22j7DEE74GkbVcQFyH2nNiC3dgbqqe```"""
     return await my_bot.say(str(links))
+
+Authkey = open('data/auth.key', 'rt') 
+my_bot.run(str(Authkey.read()))
