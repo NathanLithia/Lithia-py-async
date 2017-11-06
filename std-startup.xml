@@ -5,6 +5,7 @@
         <pattern>LOAD AIML BASIC</pattern>
         
         <template>
+            <learn>memory/system/*.aiml</learn>
             <learn>memory/misc/*.aiml</learn>
             <learn>memory/utility/*.aiml</learn>
         </template>

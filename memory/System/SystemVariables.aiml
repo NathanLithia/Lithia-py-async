@@ -5,15 +5,17 @@
 <meta name="language" content="en"/>
 
 <category>
-<pattern>SysVar.Owner</pattern>
-<template>175182469656477696</template>
+<pattern>SYSVAR OWNER</pattern>
+<template>
+175182469656477696
+</template>
 </category>
 
+
 <category>
-<pattern>SysVar.ChatBlacklist</pattern>
+<pattern>SYSVAR AUTHKEY</pattern>
 <template>
->AIML
-SysVar
+C:/data/auth.key
 </template>
 </category>
 

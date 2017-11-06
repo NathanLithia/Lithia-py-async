@@ -40,7 +40,7 @@ async def on_message(message):
         #Lets Answer some questions by picking up keywords!~ 
         keywords = ["what is a", "how do i ", "how would i ", "whats a", "wat is a", "wot is a", "where can i", "where do i find", "where do you find", "what is ", "how would i go about"]
         blacklistwords = [">AIML"]
-        if message.author.id == "175182469656477696": #Keeping this function private for now
+        if message.author.id == kernel.respond("SYSVAR OWNER"): #Keeping this function private for now
             if any(keyword in str(message.content) for keyword in keywords):
                 if any(keyword in str(message.content) for keyword in blacklistwords):
                     return
@@ -49,6 +49,13 @@ async def on_message(message):
                     for j in search(str(message.content), tld="com.au", num=1, start=0, stop=1, pause=2):
                         searchQuery.append(j)
                     await my_bot.send_message(message.channel, "{0.mention}, maybe try ".format(message.author) + str(searchQuery[0]))
+                    return
+
+        aimlparse = str(message.content)
+        if "SYSVAR" not in aimlparse.upper():
+            await my_bot.send_message(message.channel, str(kernel.respond(str(message.content))))
+        else:
+            await my_bot.send_message(message.channel, "User does not have permission to access that variable.")
     return  
 
 @my_bot.event
@@ -58,12 +65,6 @@ async def on_ready():
     system("Title " + str(my_bot.user.id) + " " + str(my_bot.user.name))
     await my_bot.change_presence(game=discord.Game(name=">Command"))
     return 
-
-#@my_bot.event #DISCORD HAS ITS OWN ANNOUNCEMENT SYSTEM NOW
-#async def on_member_join(member):
-#    server = member.server
-#    fmt = 'Welcome {0.mention}!'
-#    await my_bot.send_message(server, fmt.format(member, server))
 
 @my_bot.command(pass_context=True)
 async def ping(ctx, member: discord.Member = None):
@@ -86,11 +87,6 @@ async def bot(ctx, member: discord.Member = None):
     if member is None:
         member = ctx.message.author
     return await my_bot.say(str(member.bot))
-
-@my_bot.command(pass_context=True)
-async def AIML(ctx, *, message: str = None):
-    """Queries AIML API"""
-    return await my_bot.say(str("AIML: " + kernel.respond(str(message))))
 
 @my_bot.command(pass_context=True)
 async def joined(ctx, member: discord.Member = None):
@@ -153,26 +149,5 @@ async def hg(*userarrayinput):
         await my_bot.say(str(userarray) + " Reigns Supreme!")
     return
 
-@my_bot.command(pass_context=True)
-async def cmd(message):
-    """Repeats inputs."""
-    return await my_bot.say(str(message))
-
-@my_bot.command(pass_context=True)
-async def donate(message):
-    """Donate Cryptocurrency."""
-    links = """```diff
--BCN- Bytecoin
-2AAPhP3okfpDjfitu72M2hiMidkVJZJFB1SK85FjVHWNRCKe2XDczxWdi7ok6B5SQT6UXUtQgusruCoXbqUZm8VJAe8McVY
--BTC- Bitcoin
-1H8Eg7Dw4FVCU1gxKPjXKGAvdhm5PGUEwu
--BCC- Bitcoin Cash
-1Bt5EsJP2iuseQqx6dPoakBHzNpqCb1Ckk
--ETH- Etherium
-0x695da91c5ab4a02bd0ad6f0508933765a3034f30
--XMR- Monero
-43qmzGxV2X6S7L3ZodUEMq6XFXj3DcAvYYYsCqiBQqQVMqdBJejAk2WjXqrT3anyZ22j7DEE74GkbVcQFyH2nNiC3dgbqqe```"""
-    return await my_bot.say(str(links))
-
-Authkey = open('data/auth.key', 'rt') 
+Authkey = open(kernel.respond("SYSVAR AUTHKEY"), 'rt') 
 my_bot.run(str(Authkey.read()))
