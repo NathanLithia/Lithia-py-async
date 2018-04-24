@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+
+<category><pattern>HELLO *</pattern>
+<template>Hi</template>
+</category>
+
+<category><pattern>DEFINE NATHAN</pattern>
+<template>More helpfull than Peters father.</template>
+</category>
+
+<category><pattern>KEVIN</pattern>
+<template>Best man on the planet!</template>
+</category>
+
+<category><pattern>PING</pattern>
+<template>Pong!</template>
+</category>
+
+</aiml>

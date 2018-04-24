@@ -78,13 +78,6 @@ History is the study of the past as it is described in written documents.
 </category>
 
 <category>
-<pattern>DEFINE BULLYING</pattern>
-<template>
-Bullying is the use of force, threat, or coercion to abuse, intimidate, or aggressively dominate others.
-</template>
-</category>
-
-<category>
 <pattern>DEFINE BULLY</pattern>
 <template>
 Bullying is the use of force, threat, or coercion to abuse, intimidate, or aggressively dominate others.
@@ -169,13 +162,6 @@ Vocational education is a form of education focused on direct and practical trai
 </category>
 
 <category>
-<pattern>DEFINE SPECIAL EDUCATION</pattern>
-<template>
-Special education is for children with disabilities like ADHD.
-</template>
-</category>
-
-<category>
 <pattern>DEFINE PEDAGOGY</pattern>
 <template>
 Pedagogy is the discipline that deals with the theory and practice of teaching.
@@ -207,20 +193,6 @@ World peace, or peace on Earth, is the concept of an ideal state of happiness, f
 <pattern>DEFINE HUMAN RIGHTS</pattern>
 <template>
 Human rights are moral principles or norms that describe certain standards of human behaviour, and are regularly protected as legal rights in municipal and international law.
-</template>
-</category>
-
-<category>
-<pattern>DEFINE AUTISM</pattern>
-<template>
-Autism is a neurodevelopmental disorder characterized by impaired social interaction, impaired verbal and non-verbal communication, and restricted and repetitive behavior.
-</template>
-</category>
-
-<category>
-<pattern>DEFINE INTERPERSONAL RELATIONSHIP</pattern>
-<template>
-An interpersonal relationship is a strong, deep, or close association or acquaintance between two or more people that may range in duration from brief to enduring.
 </template>
 </category>
 
@@ -347,6 +319,37 @@ Religion is any cultural system of designated behaviors and practices, world vie
 <pattern>DEFINE VALUE</pattern>
 <template>
 In ethics, value denotes the degree of importance of some thing or action, with the aim of determining what actions are best to do or what way is best to live, or to describe the significance of different actions.
+</template>
+</category>
+
+<category>
+<pattern>DEFINE DISCORD</pattern>
+<template>
+All-in-one voice and text chat for gamers that's free, secure, and works on both your desktop and phone. 
+</template>
+</category>
+
+<category>
+<pattern> DEFINE BIG BANG</pattern>
+<template>
+The Big Bang theory is the prevailing cosmological model
+ for the universe from the earliest known periods through its subsequent large-scale evolution.
+</template>
+</category>
+
+<category>
+<pattern> DEFINE PROXY </pattern>
+<template>
+In computer networks, a proxy server is a server that acts as an intermediary 
+for requests from clients seeking resources from other servers.
+</template>
+</category>
+
+<category>
+<pattern> DEFINE IP ADDRESS </pattern>
+<template>
+An Internet Protocol address is a numerical label 
+assigned to each device connected to a computer network that uses the Internet Protocol for communication.
 </template>
 </category>
 
