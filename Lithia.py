@@ -23,7 +23,7 @@ Mobilemention = config[5]
 auditchan = config[6]
 
 startup_extensions = []
-directory = os.fsencode('./lithia/cogs')
+directory = os.fsencode('./cogs')
 for file in os.listdir(directory):
     filename = os.fsdecode(file)
     if filename.endswith(".cog") or filename.endswith(".py"): 
