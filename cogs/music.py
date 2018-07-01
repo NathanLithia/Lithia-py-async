@@ -28,7 +28,7 @@ class Music():
     @commands.command(pass_context=True, no_pm=True, description='For when you want to listen to some music.')
     async def play(self, ctx, url: str = None):
         "Plays music in your channel"
-        if ctx.message.author.id == self.bot.data.operator:
+        if ctx.message.author.id == self.bot.operator:
             if url is None:
                 return
             else:
