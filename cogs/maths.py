@@ -9,6 +9,9 @@ class Maths():
     async def calc(self, ctx, *, message: str = None):
         """Commit mathematical calculations."""
         mathswhitelist=['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', ')', '(', '-', '=', '+', '/', '<', '>', '*', '.', ' ', '^', '!', '~', '&', '|', '%', ','] # https://stackoverflow.com/a/46799212
+        if message == None:
+            await self.bot.say(f"{self.bot.prefix}calc 13.411/4.267```diff\n- 13.411/4.267\n+ 3.14295758143895```")
+            return
         await self.bot.send_typing(ctx.message.channel)
         if any(x not in mathswhitelist for x in message):
             await self.bot.say("Error. InvalidExpression.")

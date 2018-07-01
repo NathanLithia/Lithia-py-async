@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+
+<category>
+<pattern>SysVar Owner</pattern>
+<template>175182469656477696</template>
+</category>
+
+<category>
+<pattern>SysVar Blacklist</pattern>
+<template>
+>AIML
+SysVar
+</template>
+</category>
+
+<category>
+<pattern>SysVar Driver</pattern>
+<template>
+E
+</template>
+</category>
+
+</aiml>

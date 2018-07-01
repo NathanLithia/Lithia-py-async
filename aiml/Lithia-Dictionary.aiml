@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<aiml version="1.0">
+
+<meta name="author" content="Thomas Ringate"/>
+<meta name="language" content="en"/>
+
+<category>
+<pattern>DEFINE SCHOOL</pattern>
+<template>
+A school is an institution designed to provide learning spaces and learning environments for the teaching of students under the direction of teachers. 
+</template>
+</category>
+
+<category>
+<pattern>DEFINE KNOWLEDGE</pattern>
+<template>
+Knowledge is a familiarity, awareness, or understanding of someone or something, such as facts, information, descriptions, or skills, 
+which is acquired through experience or education by perceiving, discovering, or learning.
+</template>
+</category>
+
+<category>
+<pattern>DEFINE MATH</pattern>
+<template>
+Mathematics is the study of topics such as quantity, structure,
+space and change.
+</template>
+</category>
+
+<category>
+<pattern>DEFINE SCIENCE</pattern>
+<template>
+Science is a systematic enterprise that builds and organizes knowledge in the form of testable explanations and predictions about the universe.
+</template>
+</category>
+
+<category>
+<pattern>DEFINE PRIMARY SCHOOL</pattern>
+<template>
+A primary school is a school in which children receive primary or elementary education from the age of about five to twelve, coming after preschool and before secondary school.
+</template>
+</category>
+
+<category>
+<pattern>DEFINE HIGH SCHOOL</pattern>
+<template>
+High school is a kind of school, a place where people go to learn skills for future jobs.
+</template>
+</category>
+
+<category>
+<pattern>DEFINE COLLEGE</pattern>
+<template>
+A college may be a degree-awarding tertiary educational institution, a part of a collegiate or federal university, or an institution offering vocational education.
+</template>
+</category>
+
+<category>
+<pattern>DEFINE EDUCATION</pattern>
+<template>
+Education is the process of facilitating learning, or the acquisition of knowledge, skills, values, beliefs, and habits.
+</template>
+</category>
+
+<category>
+<pattern>DEFINE DISCIPLINE</pattern>
+<template>
+Discipline is the suppression of base desires, and is usually understood to be synonymous with self-restraint and control.
+</template>
+</category>
+
+<category>
+<pattern>DEFINE HISTORY</pattern>
+<template>
+History is the study of the past as it is described in written documents.
+</template>
+</category>
+
+<category>
+<pattern>DEFINE BULLY</pattern>
+<template>
+Bullying is the use of force, threat, or coercion to abuse, intimidate, or aggressively dominate others.
+</template>
+</category>
+
+<category>
+<pattern>DEFINE SCHOOL UNIFORM</pattern>
+<template>
+A school uniform is a uniform worn by students primarily for a school or otherwise educational institution.
+</template>
+</category>
+
+<category>
+<pattern>DEFINE ETYMOLOGY</pattern>
+<template>
+The word school derives from Greek σχολή (scholē), originally meaning "leisure" and also "that in which leisure is employed", but later "a group to whom lectures were given, school"
+</template>
+</category>
+
+<category>
+<pattern>DEFINE UNIVERSITY</pattern>
+<template>
+A university is an institution of higher education and research which awards academic degrees in various academic disciplines.
+</template>
+</category>
+
+<category>
+<pattern>DEFINE ACADEMIC DEGREE</pattern>
+<template>
+An academic degree is a qualification awarded to students upon successful completion of a course of study in higher education, normally at a college or university.
+</template>
+</category>
+
+<category>
+<pattern>DEFINE ACADEMIC DRESS</pattern>
+<template>
+In most countries, gaining an academic degree entitles the holder to assume distinctive academic dress particular to the awarding institution, identifying the status of the individual wearing them.
+</template>
+</category>
+
+<category>
+<pattern>DEFINE POSTGRADUATE EDUCATION</pattern>
+<template>
+Postgraduate education, or graduate education in North America, involves learning and studying for academic or professional degrees, academic or professional certificates, academic or professional diplomas, or other qualifications for which a first or bachelor's degree generally is required, and it is normally considered to be part of higher education.
+</template>
+</category>
+
+<category>
+<pattern>DEFINE ALGEBRA</pattern>
+<template>
+Algebra is one of the broad parts of mathematics, together with number theory, geometry and analysis.
+</template>
+</category>
+
+<category>
+<pattern>DEFINE PRESCHOOL</pattern>
+<template>
+Preschools provide education from ages approximately three to seven, depending on the country when children enter primary education.
+</template>
+</category>
+
+<category>
+<pattern>DEFINE SECONDARY SCHOOL</pattern>
+<template>
+In most contemporary educational systems of the world, secondary education comprises the formal education that occurs during adolescence.
+</template>
+</category>
+
+<category>
+<pattern>DEFINE TERTIARY EDUCATION</pattern>
+<template>
+Higher education, also called tertiary, third stage, or postsecondary education, is the non-compulsory educational level that follows the completion of a school such as a high school or secondary school.
+</template>
+</category>
+
+<category>
+<pattern>DEFINE VOCATIONAL EDUCATION</pattern>
+<template>
+Vocational education is a form of education focused on direct and practical training for a specific trade or craft.
+</template>
+</category>
+
+<category>
+<pattern>DEFINE PEDAGOGY</pattern>
+<template>
+Pedagogy is the discipline that deals with the theory and practice of teaching.
+</template>
+</category>
+
+<category>
+<pattern>DEFINE UNITED NATIONS</pattern>
+<template>
+The United Nations (UN) is an intergovernmental organization tasked to promote international co-operation and to create and maintain international order.
+</template>
+</category>
+
+<category>
+<pattern>DEFINE LEAGUE OF NATIONS</pattern>
+<template>
+The League of Nations was an intergovernmental organisation founded on 10 January 1920 as a result of the Paris Peace Conference that ended the First World War. 
+</template>
+</category>
+
+<category>
+<pattern>DEFINE WORLD PEACE</pattern>
+<template>
+World peace, or peace on Earth, is the concept of an ideal state of happiness, freedom and peace within and among all peoples and nations on earth.
+</template>
+</category>
+
+<category>
+<pattern>DEFINE HUMAN RIGHTS</pattern>
+<template>
+Human rights are moral principles or norms that describe certain standards of human behaviour, and are regularly protected as legal rights in municipal and international law.
+</template>
+</category>
+
+<category>
+<pattern>DEFINE FRIENDSHIP</pattern>
+<template>
+Friendship is a relationship of mutual affection between people.
+</template>
+</category>
+
+<category>
+<pattern>DEFINE MARRIAGE</pattern>
+<template>
+Marriage, also called matrimony or wedlock, is a socially or ritually recognised union between spouses that establishes rights and obligations between those spouses, as well as between them and any resulting biological or adopted children and affinity.
+</template>
+</category>
+
+<category>
+<pattern>DEFINE SOCIAL GROUP</pattern>
+<template>
+In the social sciences, a social group has been defined as two or more people who interact with one another, share similar characteristics, and collectively have a sense of unity.
+</template>
+</category>
+
+<category>
+<pattern>DEFINE SOCIETY</pattern>
+<template>
+A society is a group of people involved in persistent social interaction, or a large social group sharing the same geographical or social territory, typically subject to the same political authority and dominant cultural expectations.
+</template>
+</category>
+
+<category>
+<pattern>DEFINE DOMINANCE</pattern>
+<template>
+Dominance hierarchy arises when members of a social group interact, often aggressively, to create a ranking system. In social living groups, members are likely to compete for access to limited resources and mating opportunities.
+</template>
+</category>
+
+<category>
+<pattern>DEFINE EMPLOYMENT</pattern>
+<template>
+Employment is a relationship between two parties, usually based on a contract where work is paid for, where one party, which may be a corporation, for profit, not-for-profit organization, co-operative or other entity is the employer and the other is the employee.
+</template>
+</category>
+
+<category>
+<pattern>DEFINE EMPLOYER</pattern>
+<template>
+The main ways for employers to find workers and for people to find employers are via jobs listings in newspapers and online, also called job boards.
+</template>
+</category>
+
+<category>
+<pattern>DEFINE PAYMENT</pattern>
+<template>
+A payment is the trade of value from one party to another for goods, or services, or to fulfill a legal obligation.
+</template>
+</category>
+
+<category>
+<pattern>DEFINE RIGHTS</pattern>
+<template>
+Rights are legal, social, or ethical principles of freedom or entitlement; that is, rights are the fundamental normative rules about what is allowed of people or owed to people, according to some legal system, social convention, or ethical theory.
+</template>
+</category>
+
+<category>
+<pattern>DEFINE JUSTICE</pattern>
+<template>
+Justice is the legal or philosophical theory by which fairness is administered.
+</template>
+</category>
+
+<category>
+<pattern>DEFINE PUNISHMENT</pattern>
+<template>
+A punishment is the imposition of an undesirable or unpleasant outcome upon a group or individual, meted out by an authority—in contexts ranging from child discipline to criminal law—as a response and deterrent to a particular action or behaviour that is deemed undesirable or unacceptable.
+</template>
+</category>
+
+<category>
+<pattern>DEFINE VIOLENCE</pattern>
+<template>
+Violence is intentional use of physical force or power.
+</template>
+</category>
+
+<category>
+<pattern>DEFINE POLITICS</pattern>
+<template>
+Politics is the process of making decisions applying to all members of each group.
+</template>
+</category>
+
+<category>
+<pattern>DEFINE LAW</pattern>
+<template>
+Law is a system of rules that are created and enforced through social or governmental institutions to regulate behavior.
+</template>
+</category>
+
+<category>
+<pattern>DEFINE ECONOMICS</pattern>
+<template>
+Economics is "a social science concerned chiefly with description and analysis of the production, distribution, and consumption of goods and services".
+</template>
+</category>
+
+<category>
+<pattern>DEFINE HAPPINESS</pattern>
+<template>
+In philosophy, happiness translates the Greek concept of eudaimonia, and refers to the good life, or flourishing, rather than simply an emotion.
+</template>
+</category>
+
+<category>
+<pattern>DEFINE RELIGION</pattern>
+<template>
+Religion is any cultural system of designated behaviors and practices, world views, texts, sanctified places, ethics, or organizations, that relate humanity to the supernatural or transcendental.
+</template>
+</category>
+
+<category>
+<pattern>DEFINE VALUE</pattern>
+<template>
+In ethics, value denotes the degree of importance of some thing or action, with the aim of determining what actions are best to do or what way is best to live, or to describe the significance of different actions.
+</template>
+</category>
+
+<category>
+<pattern>DEFINE DISCORD</pattern>
+<template>
+All-in-one voice and text chat for gamers that's free, secure, and works on both your desktop and phone. 
+</template>
+</category>
+
+<category>
+<pattern> DEFINE BIG BANG</pattern>
+<template>
+The Big Bang theory is the prevailing cosmological model
+ for the universe from the earliest known periods through its subsequent large-scale evolution.
+</template>
+</category>
+
+<category>
+<pattern> DEFINE PROXY </pattern>
+<template>
+In computer networks, a proxy server is a server that acts as an intermediary 
+for requests from clients seeking resources from other servers.
+</template>
+</category>
+
+<category>
+<pattern> DEFINE IP ADDRESS </pattern>
+<template>
+An Internet Protocol address is a numerical label 
+assigned to each device connected to a computer network that uses the Internet Protocol for communication.
+</template>
+</category>
+
+</aiml>

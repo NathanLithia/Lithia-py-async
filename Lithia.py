@@ -2,18 +2,15 @@ import datetime
 from discord.ext import commands
 import discord
 import os
+import aiml
 
 description = '''Lithia an assistant built apon python3.6+ to help with a variety of things.
 Lithia's Github = https://github.com/nathanlol5/Lithia-AIML
 '''
-
 # this specifies what extensions to load when the bot starts up
 
-discordtime_start = datetime.datetime.utcnow()
 with open ("./configs/bot.ini", "r") as configfile:
     config=configfile.read().splitlines() 
-discordtime_end = datetime.datetime.utcnow()
-print((discordtime_start-discordtime_end).microseconds/1000)
 
 operator = config[1]
 devs = config[2]
@@ -21,8 +18,8 @@ prefix = config[3]
 PCmention = config[4]
 Mobilemention = config[5]
 auditchan = config[6]
-
 startup_extensions = []
+
 directory = os.fsencode('./cogs')
 for file in os.listdir(directory):
     filename = os.fsdecode(file)
@@ -34,11 +31,16 @@ for file in os.listdir(directory):
         continue
 
 bot = commands.Bot(command_prefix=commands.when_mentioned_or(prefix), description=description)
+bot.prefix = prefix
+bot.operator = "175182469656477696"
 
 @bot.event
 async def on_ready():
     data[0] = None
     print('Logged in as')
+    bot.brain = aiml.Kernel()
+    bot.brain.learn('./aiml/Startup.xml')
+    bot.brain.respond("LOAD STANDARD LIBRARIES")
     print(bot.user.name)
     print(bot.user.id)
     print('------')
@@ -47,7 +49,7 @@ async def on_ready():
 @bot.command(pass_context=True)
 async def load(ctx, extension_name : str):
     """Loads an extension."""
-    if ctx.message.author.id == operator:
+    if ctx.message.author.id == bot.operator:
         try:
             bot.load_extension(extension_name)
         except (AttributeError, ImportError) as e:
@@ -58,7 +60,7 @@ async def load(ctx, extension_name : str):
 @bot.command(pass_context=True)
 async def unload(ctx, extension_name : str):
     """Unloads an extension."""
-    if ctx.message.author.id == operator:
+    if ctx.message.author.id == bot.operator:
         bot.unload_extension(extension_name)
         await bot.say("```SubUnit\nUnloaded <{}> : ".format(extension_name)+str(datetime.datetime.now())+"z```")
 

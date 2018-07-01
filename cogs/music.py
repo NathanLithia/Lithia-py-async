@@ -2,8 +2,6 @@ import discord
 from discord.ext import commands
 import youtube_dl
 
-owners = "175182469656477696"
-
 class Music():
     def __init__(self, bot):
         self.bot = bot
@@ -30,7 +28,7 @@ class Music():
     @commands.command(pass_context=True, no_pm=True, description='For when you want to listen to some music.')
     async def play(self, ctx, url: str = None):
         "Plays music in your channel"
-        if ctx.message.author.id == owners:
+        if ctx.message.author.id == self.bot.data.operator:
             if url is None:
                 return
             else:
