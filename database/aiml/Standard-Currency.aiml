@@ -18,7 +18,7 @@
 <category><pattern>WHAT IS THE CURRENCY OF ALBANIA</pattern><template>Lek.</template></category>  
 <category><pattern>WHAT IS THE CURRENCY OF ALGERIA</pattern><template>Algerian Dinar.</template></category>  
 <category><pattern>WHAT IS THE CURRENCY OF AMERICAN SAMOA</pattern><template>U.S. Dollar.</template></category>  
-<category><pattern>WHAT IS THE CURRENCY OF AMERICA</pattern><template>The dollar.</template></category>  
+<category><pattern>WHAT IS THE CURRENCY OF AMERICA</pattern><template>The American dollar.</template></category>  
 <category><pattern>WHAT IS THE CURRENCY OF ANDORRA</pattern><template>Euro.</template></category>  
 <category><pattern>WHAT IS THE CURRENCY OF ANGOLA</pattern><template>New Kwanza (it replaced the Kwanza).</template></category>  
 <category><pattern>WHAT IS THE CURRENCY OF ANGUILLA</pattern><template>East Caribbean Dollar.</template></category>  
@@ -28,7 +28,7 @@
 <category><pattern>WHAT IS THE CURRENCY OF ARMENIA</pattern><template>Dram (Russian Rouble was formerly in use).</template></category>  
 <category><pattern>WHAT IS THE CURRENCY OF ARUBA</pattern><template>Aruban Guilder (Florin).</template></category>  
 <category><pattern>WHAT IS THE CURRENCY OF AUSTRAILIA</pattern><template>I think it is the Australian Dollar.</template></category>  
-<category><pattern>WHAT IS THE CURRENCY OF AUSTRALIA</pattern><template>The currnecy of Australia is the Australian Dollar.</template></category>  
+<category><pattern>WHAT IS THE CURRENCY OF AUSTRALIA</pattern><template>The currency of Australia is the Australian Dollar.</template></category>  
 <category><pattern>WHAT IS THE CURRENCY OF AUSTRIA</pattern><template>Euro (Austrian Schilling was formerly in use).</template></category>  
 <category><pattern>WHAT IS THE CURRENCY OF AZERBAIJAN</pattern><template>Azerbaijani Manat (Russian Rouble was formerly in use).                </template></category>  
 <category><pattern>WHAT IS THE CURRENCY OF BAHAMAS</pattern><template>Bahamian Dollar.</template></category>  
@@ -270,7 +270,7 @@
 <category><pattern>WHAT IS THE CURRENCY OF USA</pattern><template>U.S. Dollar.</template></category>  
 <category><pattern>WHAT IS THE CURRENCY OF UZBEKISTAN</pattern><template>Uzbekistani Som (Russian Rouble was formerly in use).</template></category>  
 <category><pattern>WHAT IS THE CURRENCY OF VANUATU</pattern><template>Vatu.</template></category>  
-<category><pattern>WHAT IS THE CURRENCY OF VATICAN *</pattern><template>Nothing.</template></category>  
+<category><pattern>WHAT IS THE CURRENCY OF VATICAN *</pattern><template>Euro.</template></category>  
 <category><pattern>WHAT IS THE CURRENCY OF VENEZUELA</pattern><template>Bolivar.</template></category>  
 <category><pattern>WHAT IS THE CURRENCY OF VIETNAM</pattern><template>Dong.</template></category>  
 <category><pattern>WHAT IS THE CURRENCY OF VIRGIN ISLANDS</pattern><template>US Dollar (Pound Sterling and East Caribbean Dollar also circulate).</template></category>  

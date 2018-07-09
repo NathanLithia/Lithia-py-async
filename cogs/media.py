@@ -6,8 +6,8 @@ class Profile():
         self.bot = bot
 
 
-    @commands.command(pass_context=True)
-    async def pic(self, ctx, member: discord.Member = None):
+    @commands.command(pass_context=True, aliases=['pic'])
+    async def Pic(self, ctx, member: discord.Member = None):
         if member is None:
             member = ctx.message.author
         await self.bot.send_message(ctx.message.channel, member.avatar_url)

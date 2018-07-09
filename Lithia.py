@@ -3,14 +3,18 @@ from discord.ext import commands
 import discord
 import os
 import aiml
+import asyncio
 
-description = '''Lithia an assistant built apon python3.6+ to help with a variety of things.
+description = '''
+Lithia an assistant built apon python3.6+ to help with a variety of things.
 Lithia's Github = https://github.com/nathanlol5/Lithia-AIML
 '''
-# this specifies what extensions to load when the bot starts up
+# this specifies what extensions to load when the boat starts up
+
 
 with open ("./configs/bot.ini", "r") as configfile:
     config=configfile.read().splitlines() 
+
 
 operator = config[1]
 devs = config[2]
@@ -20,7 +24,10 @@ Mobilemention = config[5]
 auditchan = config[6]
 startup_extensions = []
 
+
 directory = os.fsencode('./cogs')
+
+
 for file in os.listdir(directory):
     filename = os.fsdecode(file)
     if filename.endswith(".cog") or filename.endswith(".py"): 
@@ -31,22 +38,41 @@ for file in os.listdir(directory):
         continue
 
 bot = commands.Bot(command_prefix=commands.when_mentioned_or(prefix), description=description)
+
+
+async def timed_message(server, message, delay = 10):
+    """Messages and deletes message after a delay"""
+    msg2delete = await bot.send_message(server, message)
+    await asyncio.sleep(delay)
+    return await bot.delete_message(msg2delete)
+
+
+async def timed_delete(message, delay = 10):
+    """deletes message after an delay"""
+    await asyncio.sleep(delay)
+    return await bot.delete_message(message)
+
+
+bot.timed_message = timed_message
+bot.timed_delete = timed_delete
 bot.prefix = prefix
 bot.operator = "175182469656477696"
+
 
 @bot.event
 async def on_ready():
     data[0] = None
     print('Logged in as')
     bot.brain = aiml.Kernel()
-    bot.brain.learn('./aiml/Startup.xml')
+    bot.brain.learn('./database/aiml/Startup.xml')
     bot.brain.respond("LOAD STANDARD LIBRARIES")
     print(bot.user.name)
     print(bot.user.id)
     print('------')
     await bot.change_presence(game=discord.Game(name=str(prefix) + "Commands", type=2))
 
-@bot.command(pass_context=True)
+
+@bot.command(pass_context=True, hidden=True)
 async def load(ctx, extension_name : str):
     """Loads an extension."""
     if ctx.message.author.id == bot.operator:
@@ -57,12 +83,14 @@ async def load(ctx, extension_name : str):
             return
         await bot.say("```SubUnit\nLoaded <{}> : ".format(extension_name)+str(datetime.datetime.now())+"z```")
 
-@bot.command(pass_context=True)
+
+@bot.command(pass_context=True, hidden=True)
 async def unload(ctx, extension_name : str):
     """Unloads an extension."""
     if ctx.message.author.id == bot.operator:
         bot.unload_extension(extension_name)
         await bot.say("```SubUnit\nUnloaded <{}> : ".format(extension_name)+str(datetime.datetime.now())+"z```")
+
 
 if __name__ == "__main__":
     for extension in startup_extensions:
@@ -71,7 +99,8 @@ if __name__ == "__main__":
         except Exception as e:
             exc = '{}: {}'.format(type(e).__name__, e)
             print('Failed to load extension {}\n{}'.format(extension, exc))
-            
+    
+
     with open ("./configs/bot.token", "r") as myfile:
         data=myfile.readlines()
     bot.run(data[0])

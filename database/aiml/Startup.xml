@@ -3,7 +3,7 @@
     <category>
         <pattern>LOAD STANDARD LIBRARIES</pattern>
         <template>
-            <learn>aiml/*.aiml</learn>
+            <learn>database/aiml/*.aiml</learn>
         </template>
     </category>
 </aiml>

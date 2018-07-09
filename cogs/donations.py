@@ -26,16 +26,20 @@ CRYPTO_TEXT=f"""```diff
 - we also take kidneys as donations
 ```"""
 
-class donations():
+class Donations():
     def __init__(self, bot):
         self.bot = bot
 
-    @commands.command(pass_context=True)
-    async def donate(self):
+
+    @commands.command(pass_context=True, aliases=['donating', 'Donating', 'donate'])
+    async def Donate(self):
         await self.bot.say(str(DONATE_TEXT))
-    @commands.command(pass_context=True)
-    async def crypto(self):
+
+
+    @commands.command(pass_context=True, aliases=['crypto', 'cryptocurrency', 'Cryptocurrency'])
+    async def Crypto(self):
         await self.bot.say(str(CRYPTO_TEXT))
 
+
 def setup(bot):
-    bot.add_cog(donations(bot))
+    bot.add_cog(Donations(bot))
