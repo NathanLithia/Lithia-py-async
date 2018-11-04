@@ -13,8 +13,6 @@ class Music():
         if message is None:
             await self.bot.say(f"Attempting to join: {ctx.message.author.voice_channel}")
             await self.bot.join_voice_channel(ctx.message.author.voice_channel)
-        else:
-            return
 
 
     @commands.command(pass_context=True, no_pm=True)
@@ -22,7 +20,6 @@ class Music():
         "| Leaves your voice channel"
         await self.bot.say(f"Attempting to leave: {ctx.message.author.voice_channel}")
         await ctx.message.server.voiceclient.disconnect(ctx.message.author.voice_channel)
-        return
 
 
     @commands.command(pass_context=True, no_pm=True)
@@ -32,7 +29,6 @@ class Music():
         for x in self.bot.client.voice_clients:
             if(x.server == ctx.message.server):
                 return await x.disconnect()
-        return
 
 
     @commands.command(pass_context=True, no_pm=True, description='For when you want to listen to some music.')
@@ -50,9 +46,6 @@ class Music():
                 vc = await self.bot.join_voice_channel(channel)
                 player = await vc.create_ytdl_player(str(url))
                 player.start()
-            return
-        else:
-            return
 
 
 def setup(bot):

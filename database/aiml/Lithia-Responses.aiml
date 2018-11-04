@@ -9,10 +9,6 @@
 <template>More helpfull than Peters father.</template>
 </category>
 
-<category><pattern>KEVIN</pattern>
-<template>Best man on the planet!</template>
-</category>
-
 <category><pattern>PING</pattern>
 <template>Pong!</template>
 </category>
@@ -20,5 +16,23 @@
 <category><pattern>NO U</pattern>
 <template>No u</template>
 </category>
+
+
+<category><pattern>DESPACITO LINK</pattern>
+<template>despacito link</template>
+</category>
+
+<category><pattern>OWO</pattern>
+<template>uwu</template>
+</category>
+
+<category><pattern>UWU</pattern>
+<template>OwO</template>
+</category>
+
+<category><pattern>LOOΠΔ</pattern>
+<template>stan LOOΠΔ</template>
+</category>
+
 
 </aiml>

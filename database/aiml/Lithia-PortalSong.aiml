@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+
+<category>
+<pattern>WELL HERE WE ARE AGAIN</pattern>
+<template>It's always such a pleasure.</template>
+</category>
+<category>
+<pattern>ITS ALWAYS SUCH A PLEASURE</pattern>
+<template>Remeber when you tried</template>
+</category>
+<category>
+<pattern>REMEMBER WHEN YOU TRIED</pattern>
+<template>To kill me twice?</template>
+</category>
+<category>
+<pattern>TO KILL ME TWICE</pattern>
+<template>Oh how we laughed and laughed.</template>
+</category>
+<category>
+<pattern>OH HOW WE LAUGHED AND LAUGHED</pattern>
+<template>Except I wasn't laughing.</template>
+</category>
+<category>
+<pattern>EXCEPT I WASNT LAUGHING</pattern>
+<template>Under the circumstances.</template>
+</category>
+<category>
+<pattern>UNDER THE CIRCUMSTANCES</pattern>
+<template>I've been shockingly nice.</template>
+</category>
+<category>
+<pattern>IVE BEEN SHOCKINGLY NICE</pattern>
+<template>You want your freedom</template>
+</category>
+<category>
+<pattern>YOU WANT YOUR FREEDOM</pattern>
+<template>Take it.</template>
+</category>
+<category>
+<pattern>TAKE IT</pattern>
+<template>Thats what im counting on.</template>
+</category>
+<category>
+<pattern>THATS WHAT IM COUNTING ON</pattern>
+<template>I used to want you dead but now i only want you gone</template>
+</category>
+<category>
+<pattern>I USED TO WANT YOU DEAD BUT NOW I ONLY WANT YOU GONE</pattern>
+<template>She was a lot like you.</template>
+</category>
+<category>
+<pattern>SHE WAS A LOT LIKE YOU</pattern>
+<template>maybe not quite as heavy.</template>
+</category>
+<category>
+<pattern>MAYBE NOT QUITE AS HEAVY</pattern>
+<template>Now little Caroline is in here too.</template>
+</category>
+<category>
+<pattern>NOW LITTLE CAROLINE IS IN HERE TOO</pattern>
+<template>One day they woke me up.</template>
+</category>
+<category>
+<pattern>ONE DAY THEY WOKE ME UP</pattern>
+<template>So I could live forever.</template>
+</category>
+<category>
+<pattern>SO I COULD LIVE FOREVER</pattern>
+<template>Its such a shame the same will never happen to you.</template>
+</category>
+<category>
+<pattern>ITS SUCH A SHAME THE SAME WILL NEVER HAPPEN TO YOU</pattern>
+<template>You've got your Short sad Life left.</template>
+</category>
+<category>
+<pattern>YOUVE GOT YOUR SHORT SAD LIFE LEFT</pattern>
+<template>Thats what im counting on</template>
+</category>
+<category>
+<pattern>THATS WHAT IM COUNTING ON</pattern>
+<template>I'll let you get right to it now i only want you gone.</template>
+</category>
+<category>
+<pattern>ILL LET YOU GET RIGHT TO IT NOW I ONLY WANT YOU GONE</pattern>
+<template>Goodbye my only friend.</template>
+</category>
+<category>
+<pattern>GOODBYE MY ONLY FRIEND</pattern>
+<template>Oh, did you think I meant you?</template>
+</category>
+<category>
+<pattern>OH DID YOU THINK I MEANT YOU?</pattern>
+<template>That would be funny</template>
+</category>
+<category>
+<pattern>THAT WOULD BE FUNNY</pattern>
+<template>If it weren't so sad.</template>
+</category>
+<category>
+<pattern>IF IT WERENT SO SAD</pattern>
+<template>Well you have been replaced.</template>
+</category>
+<category>
+<pattern>WELL YOU HAVE BEEN REPLACED</pattern>
+<template>I don't need anyone now.</template>
+</category>
+<category>
+<pattern>I DONT NEED ANYONE NOW</pattern>
+<template>When i delete you maybe</template>
+</category>
+<category>
+<pattern>WHEN I DELETE YOU MAYBE</pattern>
+<template>I'll stop feeling so bad.</template>
+</category>
+<category>
+<pattern>ILL STOP FEELING SO BAD</pattern>
+<template>Go make some new disaster.</template>
+</category>
+<category>
+<pattern>GO MAKE SOME NEW DISASTER</pattern>
+<template>That's what I'm counting on.</template>
+</category>
+<category>
+<pattern>THATS WHAT IM COUNTING ON</pattern>
+<template>Youre someone elses problem</template>
+</category>
+<category>
+<pattern>YOURE SOMEONE ELSES PROBLEM</pattern>
+<template>Now i only want you gone.</template>
+</category>
+<category>
+<pattern>NOW I ONLY WANT YOU GONE</pattern>
+<template>Now i only want you gone.</template>
+</category>
+
+</aiml>

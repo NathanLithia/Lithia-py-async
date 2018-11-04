@@ -40,14 +40,29 @@ for file in os.listdir(directory):
 bot = commands.Bot(command_prefix=commands.when_mentioned_or(prefix), description=description)
 
 
+async def status_task():
+    while True:
+        await bot.change_presence(game=discord.Game(name=f"{bot.prefix}Commands", type=2))
+        await asyncio.sleep(35)
+        await bot.change_presence(game=discord.Game(name="on Python", type=1))
+        await asyncio.sleep(35)
+        await bot.change_presence(game=discord.Game(name="🐝Ri&Coffee☕ :)", type=1))
+        await asyncio.sleep(35)
+        await bot.change_presence(game=discord.Game(name=f"{bot.prefix}Donate", type=1))
+        await asyncio.sleep(35)
+
+
 async def timed_message(server, message, delay = 10):
     """Messages and deletes message after a delay"""
     msg2delete = await bot.send_message(server, message)
-    await asyncio.sleep(delay)
-    return await bot.delete_message(msg2delete)
-
+    await bot.timed_delete(msg2delete, delay)
+    return 
 
 async def timed_delete(message, delay = 10):
+    """Thread Spawner for Deleting messages over time"""
+    bot.loop.create_task(msgdel(message, delay))
+
+async def msgdel(message, delay = 10):
     """deletes message after an delay"""
     await asyncio.sleep(delay)
     return await bot.delete_message(message)
@@ -70,6 +85,7 @@ async def on_ready():
     print(bot.user.id)
     print('------')
     await bot.change_presence(game=discord.Game(name=str(prefix) + "Commands", type=2))
+    bot.loop.create_task(status_task())
 
 
 @bot.command(pass_context=True, hidden=True)
@@ -101,6 +117,6 @@ if __name__ == "__main__":
             print('Failed to load extension {}\n{}'.format(extension, exc))
     
 
-    with open ("./configs/bot.token", "r") as myfile:
+    with open ("./tokens/bot.token", "r") as myfile:
         data=myfile.readlines()
     bot.run(data[0])

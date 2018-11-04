@@ -11,30 +11,23 @@ class ERROR_HANDLER():
         if isinstance(error, commands.BadArgument):
             await self.bot.timed_message(ctx.message.channel, f"```diff\n- Bad Argument: {error}\n\n+ For more information see {self.bot.prefix}errorhelp```")
             await self.bot.delete_message(ctx.message)
-            return
         if isinstance(error, commands.MissingRequiredArgument):
             await self.bot.timed_message(ctx.message.channel, f"```diff\n- Missing Required Argument: {error}\n+ For more information see {self.bot.prefix}errorhelp```")
             await self.bot.delete_message(ctx.message)
-            return 
         if isinstance(error, commands.CommandOnCooldown):
             await self.bot.timed_message(ctx.message.channel, f"{ctx.message.author.mention}!```diff\n- Either a global command or {error}\n+ For more information see {self.bot.prefix}errorhelp```")
             await self.bot.delete_message(ctx.message)
-            return 
-            
-
         if isinstance(error, commands.CommandNotFound):
             if ctx.message.content.startswith( self.bot.user.mention ) == True or ctx.message.content.startswith( "<@!"+self.bot.user.id+">" ) == True:
-
                 if ctx.message.content.startswith( self.bot.user.mention ) == True:
                     response = str(self.bot.brain.respond(str(ctx.message.content).lstrip(str(self.bot.user.mention))))
                 else:
                     response = str(self.bot.brain.respond(str(ctx.message.content).lstrip(str("<@!"+self.bot.user.id+">"))))
-
                 if response ==  "":
-                    response = f"{ctx.message.author.mention}That is a little too abstract for me to process at this time."
+                    response = f"{ctx.message.author.mention} Sorry, i dont understand that at the moment."
                 await self.bot.send_message(ctx.message.channel, response)
-
-            return
+        else:
+            print(f"{error}")
 
 
     @commands.command(pass_context=True, no_pm=True, hidden=True)

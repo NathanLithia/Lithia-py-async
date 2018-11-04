@@ -33,6 +33,10 @@ class Chat():
         await self.bot.delete_message(ctx.message)
         await self.bot.say(str(ctx.message.content).split('say', 1)[1])
 
+    @commands.command(pass_context=True, aliases=['yell'])
+    async def Yell(self, ctx, message: str = None):
+        """| Repeats input in TTS."""
+        await self.bot.send_message(ctx.message.channel, message, tts=True)
 
     @commands.command(pass_context=True, hidden=True, aliases=['commands'])
     async def commandhelper(self, ctx):

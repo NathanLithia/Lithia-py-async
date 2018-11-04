@@ -1,30 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="1.0">
 
-<category><pattern>ROLL</pattern>
-<template>
-Usage: Roll * (6, more coming soon!)
-</template>
-</category>
-
-<category><pattern>ROLL 6</pattern>
-<template>
-<random>
-<li>1.</li>
-<li>2.</li>
-<li>3.</li>
-<li>4.</li>
-<li>5.</li>
-<li>6.</li>
-</random>
-</template>
-</category>
-
 <category><pattern>FLIP</pattern>
 <template>
 <random>
 <li>Heads</li>
 <li>Tails</li>
+</random>
+</template>
+</category>
+
+<category><pattern>SHOULD I *</pattern>
+<template>
+<random>
+<li>Yes</li>
+<li>No</li>
+<li>Deffinantly!</li>
+<li>No you shouldnt.</li>
+<li>Maybe.</li>
 </random>
 </template>
 </category>
