@@ -1,3 +1,5 @@
+This version is now depricated due to a library change.
+
 Lithia.py python source.
 
 If you are here for source code in order to learn and write you're own bot, you have come to the wrong place.
